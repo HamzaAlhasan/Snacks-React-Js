@@ -1,0 +1,18 @@
+
+
+.menutext{
+    margin-top: 40px;
+}
+
+.fillterButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.fillterButton Button{
+    margin-left: 50px;
+}
+#card2{
+    margin-left: 80px;
+    height: 74vh;
+}

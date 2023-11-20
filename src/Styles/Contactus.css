@@ -1,0 +1,17 @@
+.contactUstext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.contactUstext h1{
+    color: black;
+    font-size: 35px;
+    font-weight: 900;
+    padding: 20px 0;
+    font-family: cursive;
+    padding-left: 15px;
+    padding-right: 15px;
+}

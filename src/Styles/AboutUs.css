@@ -1,0 +1,53 @@
+
+
+.aboutUstext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    isolation: isolate;
+  }
+
+.aboutUstext h1{
+        color: white;
+        font-size: 35px;
+        font-weight: 900;
+        padding: 20px 0;
+        font-family: cursive;
+        padding-left: 15px;
+        padding-right: 15px;
+}
+.aboutUstext h2{
+  color: white;
+  font-family: cursive;
+}
+
+.aboutUscontent{
+  position: relative;
+  place-items: center;
+  height: 88vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.aboutUscontent::before{
+  background-image: url('../assets/images/main.jpg');
+  background-size: cover;
+  content: '';
+  position: absolute;
+  inset: 0;
+  filter: brightness(0.5);
+}
+
+.content{
+  margin-top: 50px;
+  isolation: isolate;
+}
+
+.content h2{
+  color: greenyellow;
+  font-family: cursive;
+}
+.content p{
+  color: white;
+  font-family: cursive;
+}
