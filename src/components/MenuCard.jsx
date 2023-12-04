@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
-function MenuCard({image,title,desc,price}) {
+function MenuCard({image,title,desc,price,onClick1}) {
   return (
     <div className="card" id='card2' style={{width: '18rem'}}>
   <img src={image} className="card-img-top" alt="..." />
@@ -9,7 +9,7 @@ function MenuCard({image,title,desc,price}) {
     <h5 className="card-title">{title}</h5>
     <p className="card-text">{desc}</p>
     <p className="card-text">{price}</p>
-    <Button text='Add to cart' />
+    <Button text='Add to cart' onClick={onClick1}/>
   </div>
 </div>
   )

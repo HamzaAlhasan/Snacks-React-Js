@@ -1,0 +1,45 @@
+.Checkouttext h2{
+    font-family: cursive;
+}
+.Checkouttext h1{
+    color: black;
+    font-size: 35px;
+    font-weight: 900;
+    padding: 20px 0;
+    font-family: cursive;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.details h4{
+    padding-right: 830px;
+}
+
+.Button Button{
+    width: 40%;
+}
+
+.paymentStep{
+    margin-right: 900px;
+}
+.sub{
+    position: relative;
+  place-items: center;
+  height: 87.7vh;
+display: flex;
+justify-content: center;
+}
+
+.sub::before{
+    background-image: url('../assets/images/main.jpg');
+    background-size: cover;
+    content: '';
+    position: absolute;
+    inset: 0;
+    filter: brightness(0.3);
+}
+.sub h2{
+    color: yellowgreen;
+    isolation: isolate;
+    font-family: cursive;
+}

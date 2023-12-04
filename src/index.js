@@ -7,6 +7,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import { BrowserRouter } from 'react-router-dom'
 import { ClerkProvider } from "@clerk/clerk-react";
+import {Provider} from 'react-redux';
+import { store } from './Redux/sotre';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
@@ -16,6 +19,7 @@ const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 console.log(clerkPubKey);
 
 root.render(
+   <Provider store={store}>
    <ClerkProvider publishableKey={clerkPubKey}>
   <BrowserRouter>
      <React.StrictMode>
@@ -23,6 +27,7 @@ root.render(
      </React.StrictMode>
   </BrowserRouter>
   </ClerkProvider>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

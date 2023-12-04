@@ -8,6 +8,9 @@ import Register from './Pages/Signup';
 import Login from './Pages/Login';
 import { SignIn, SignedOut } from '@clerk/clerk-react';
 import Cart from './Pages/Cart';
+import Payment from './Pages/Payment';
+import Protected from './Data/protected';
+
 // console.log(process.env.REACT_APP_CLERK_PUBLISHABLE_KEY);
 function App() {
   return (
@@ -19,7 +22,10 @@ function App() {
         <Route path='/contactUs' element={<Contactus />} />
         <Route path='/register' element ={<Register />} />
         <Route path='/login' element={<Login/>} />
+        <Route path='/cart' element={<Protected />}>
           <Route path='/cart' element={<Cart />} />
+        </Route>
+          <Route path='/checkout' element={<Payment />} />
       </Routes>
     </div>
   );

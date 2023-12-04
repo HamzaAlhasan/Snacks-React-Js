@@ -35,25 +35,25 @@ console.log(fname);
           </div>
    </div>
 <div className="container-fluid">
-<div class="row g-3" style={{justifyContent:'center'}}>
+<div className="row g-3" style={{justifyContent:'center'}}>
   <div className="col-4">
-    <input type="text" class="form-control" placeholder="First name" aria-label="First name" onChange={(e)=>{setFname(e.target.value)}}/>
+    <input type="text" className="form-control" placeholder="First name" aria-label="First name" onChange={(e)=>{setFname(e.target.value)}}/>
   </div>
   <div className="col-4">
-    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" onChange={(e)=>{setLname(e.target.value)}}/>
-  </div>
-
-
-<div class="row g-3" style={{justifyContent:'center',marginTop:'5px'}}>
-  <div className="col-4">
-    <input type="text" class="form-control" placeholder="Email" aria-label="Email" onChange={(e)=>{setEmail(e.target.value)}} />
-  </div>
-  <div className="col-4">
-    <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number" onChange={(e)=>{setPhoneNumber(e.target.value)}}/>
+    <input type="text" className="form-control" placeholder="Last name" aria-label="Last name" onChange={(e)=>{setLname(e.target.value)}}/>
   </div>
 
-  <div class="mb-3 col-8">
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder='Your Message' onChange={(e)=>{setMessage(e.target.value)}}></textarea>
+
+<div className="row g-3" style={{justifyContent:'center',marginTop:'5px'}}>
+  <div className="col-4">
+    <input type="text" className="form-control" placeholder="Email" aria-label="Email" onChange={(e)=>{setEmail(e.target.value)}} />
+  </div>
+  <div className="col-4">
+    <input type="text" className="form-control" placeholder="Phone Number" aria-label="Phone Number" onChange={(e)=>{setPhoneNumber(e.target.value)}}/>
+  </div>
+
+  <div className="mb-3 col-8">
+  <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder='Your Message' onChange={(e)=>{setMessage(e.target.value)}}></textarea>
 </div>
   {errortrue ? <p style={{color:'green'}}>{error}</p> : <p style={{color:'red'}}>{error}</p>}
 </div>
