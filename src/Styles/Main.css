@@ -76,18 +76,22 @@ button {
   }
 
   .card {
-    margin-left: 120px;
+    /* margin-left: 120px; */
     box-shadow: 5px 7px black;
   }
 
   .Images{
     display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
     margin-bottom: 50px;
+    /* margin-right: 120px; */
   }
   
   .icons{
     display: flex;
-    margin-left: 220px;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
     margin-bottom: 60px;
   }
   
@@ -103,16 +107,48 @@ button {
 
   .menuHome{
     display: flex;
-    margin-bottom: 30px;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+     margin-bottom: 30px;
+    /* margin-right: 50px; */
   }
 
   .menutext{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .Seemore{
     margin-bottom: 30px;
+  }
+
+
+  @media screen and (max-width : 865px){
+    .menuHome{
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+  @media screen and (max-width : 470px){
+    .menuHome{
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+    }
+    .Images{
+      flex-direction: column;
+      align-items: center;
+    }
+    .icons{
+      flex-direction: column;
+      align-items: center;
+    }
+    .card{
+      margin-bottom: 15px;
+    }
+
   }

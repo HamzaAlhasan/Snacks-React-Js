@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../Styles/Header.css';
 import { Link } from 'react-router-dom';
 import IconNavBar from '../assets/images/IconNavbar.png';
@@ -7,7 +7,6 @@ import {useSelector} from 'react-redux'
 
 function Header() {
   const {userId,isSignedIn} = useAuth();
-  const {user} = useUser();
   const items = useSelector((state)=>state.cart.items);
   console.log(items.length)
   return (

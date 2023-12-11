@@ -7,12 +7,60 @@
 .fillterButton{
     display: flex;
     justify-content: center;
+    /* flex-wrap: wrap; */
     margin-top: 20px;
 }
 .fillterButton Button{
     margin-left: 50px;
 }
 #card2{
-    margin-left: 80px;
-    height: 74vh;
+    /* margin-left: 80px; */
+    height: 84vh;
 }
+
+.search {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .search input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search button[type="submit"] {
+    background-color: greenyellow;
+    width: 82px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .9s ease;
+  }
+  
+  .search button[type="submit"]:hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    background-color: #c4e201;
+  }
+  
+  @media screen and (max-width : 570px) {
+    .fillterButton{
+      flex-wrap: wrap;
+
+    }
+    .fillterButton Button{
+      margin-bottom: 10px;
+      margin-left: 5px;
+    }
+  }
+  
+  

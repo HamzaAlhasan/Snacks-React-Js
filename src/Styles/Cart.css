@@ -11,3 +11,24 @@
 .carttext h2{
     font-family: cursive;
 }
+
+@media screen and (max-width : 767px) {
+    tr td img{
+        width: 180px;
+        height: 20px;
+        
+    }
+}
+@media screen and (max-width :607px ) {
+   
+    .totalPrice{
+        flex-direction: column;
+        align-items: center;
+    }
+    .totalPrice h2{
+        margin-bottom: 10px;
+    }
+    .totalPrice Button{
+        margin-bottom: 10px;
+    }
+}

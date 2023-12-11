@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../Styles/Main.css';
 import Card from '../components/Card';
 import MenuCard from '../components/MenuCard';
@@ -17,15 +17,15 @@ import { Link, useNavigate } from 'react-router-dom';
 import Main from '../Layout/Main';
 
 function Home() {
-  
+  const navigate = useNavigate();     
+
     const images = [Zinger,Burger,Hotdog];
   const icons = [{'icon' : FoodIcon,'title' : 'Food'},{'icon': DrinkIcon,'title' : 'Drink'},{'icon':SaladIcon,'title':'Salad'}];
   const Meals = [{'image':BurgerMeal1,'title':'Mexican Beef Burger','desc':'chiese,onion,180 gram,tomato','price':'4.5 JOD'},
                  {'image':BurgerMeal2,'title':'Russain Beef Burger','desc':'chiese,onion,180 gram,tomato','price':'5.5 JOD'},
                  {'image':BurgerMeal3,'title':'Italiesh Beef Burger','desc':'chiese,onion,180 gram,tomato','price':'5 JOD'}
                 ];
-                const navigate = useNavigate();
-                
+
   return (
     <Main>
    <div className="continer">
@@ -66,7 +66,7 @@ function Home() {
           </div>
           <div className="menuHome">
             {Meals.map((meal)=>{
-              return <div key={meal.title} className="col-4"><MenuCard image={meal.image} title={meal.title} desc={meal.desc} price={meal.price} /></div>
+              return <div key={meal.title} ><MenuCard image={meal.image} title={meal.title} desc={meal.desc} price={meal.price} /></div>
             })}
           </div>
         

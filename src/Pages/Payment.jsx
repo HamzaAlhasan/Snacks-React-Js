@@ -43,6 +43,7 @@ function Payment() {
       } else {
         setError("");
         setOrder(false);
+        localStorage.removeItem('cart')
       }
     } else {
       setError("All fields must be not empty");

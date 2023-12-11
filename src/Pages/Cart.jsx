@@ -29,7 +29,6 @@ const handleCheckout = ()=>{
   return (
     <>
       <Header />
-      {signOut && localStorage.removeItem('cart')}
       <div className="container">
         <div className="carttext col-12 d-flex justify-content-center mt-4 align-items-center ">
           <h2>===</h2>

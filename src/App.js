@@ -6,13 +6,13 @@ import Contactus from './Pages/Contactus';
 import Home from './Pages/Home';
 import Register from './Pages/Signup';
 import Login from './Pages/Login';
-import { SignIn, SignedOut } from '@clerk/clerk-react';
 import Cart from './Pages/Cart';
 import Payment from './Pages/Payment';
 import Protected from './Data/protected';
 
 // console.log(process.env.REACT_APP_CLERK_PUBLISHABLE_KEY);
 function App() {
+  
   return (
     <div className="App">
       <Routes>
@@ -25,7 +25,9 @@ function App() {
         <Route path='/cart' element={<Protected />}>
           <Route path='/cart' element={<Cart />} />
         </Route>
+        <Route path='/checkout' element={<Protected />}>
           <Route path='/checkout' element={<Payment />} />
+          </Route>
       </Routes>
     </div>
   );
